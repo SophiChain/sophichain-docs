@@ -1,0 +1,169 @@
+/**
+ * SophiChain Documentation Custom Styles
+ * 
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e5c8a;
+  --ifm-color-primary-dark: #295280;
+  --ifm-color-primary-darker: #274e78;
+  --ifm-color-primary-darkest: #204063;
+  --ifm-color-primary-light: #336694;
+  --ifm-color-primary-lighter: #386d9c;
+  --ifm-color-primary-lightest: #4080b1;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #4a9eff;
+  --ifm-color-primary-dark: #2d8cff;
+  --ifm-color-primary-darker: #1d82ff;
+  --ifm-color-primary-darkest: #0066e6;
+  --ifm-color-primary-light: #67b0ff;
+  --ifm-color-primary-lighter: #77baff;
+  --ifm-color-primary-lightest: #a6d4ff;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom styles for SophiChain */
+.hero {
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-dark) 100%);
+  color: white;
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Status badges */
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: 0.875em;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  margin-left: 0.5em;
+}
+
+.badge-complete {
+  background-color: #28a745;
+  color: white;
+}
+
+.badge-in-progress {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.badge-planned {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* Module cards */
+.module-card {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.module-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Architecture diagrams */
+.mermaid {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Code blocks */
+.prism-code {
+  font-size: 0.9rem;
+}
+
+/* Tables */
+table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th {
+  background-color: var(--ifm-color-emphasis-200);
+  font-weight: 600;
+}
+
+table th,
+table td {
+  padding: 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+/* Admonitions custom styling */
+.admonition {
+  margin-bottom: 1rem;
+}
+
+/* Footer improvements */
+.footer {
+  padding: 2rem 0;
+}
+
+.footer__title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Navbar improvements */
+.navbar__brand {
+  font-weight: 700;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+  
+  .hero__subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+/* Emoji spacing */
+.emoji {
+  margin-right: 0.25em;
+}
+
+/* Highlight important notes */
+.theme-doc-markdown > p > strong:first-child {
+  color: var(--ifm-color-primary);
+}
+
+/* Coming Soon label */
+.coming-soon {
+  font-style: italic;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.9em;
+}
