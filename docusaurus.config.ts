@@ -8,13 +8,10 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  // If using custom domain: 'https://docs.sophichain.com'
-  // If using GitHub Pages: 'https://sophichain.github.io'
-  url: 'https://sophichain.github.io',
+  url: 'https://docs.sophichain.com',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For custom domain: '/'
-  // For GitHub Pages: '/sophichain-docs/'
-  baseUrl: '/sophichain-docs/',
+  // For custom domain, use '/'
+  baseUrl: '/',
 
   // GitHub pages deployment config
   organizationName: 'sophichain',
@@ -40,7 +37,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
-          editUrl: 'https://github.com/sophichain/sophichain-docs/edit/main/',
+          editUrl: 'https://github.com/sophichain-docs/edit/main/',
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
         },
